@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empreendimentos na Grande Florianópolis | AXA Imóveis Floripa</title>
+    <meta name="description" content="Encontre o imóvel que combina com o seu próximo passo. Lançamentos, apartamentos e terrenos selecionados na Grande Florianópolis pela AXA Imóveis Floripa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=3">
+    <link rel="stylesheet" href="css/responsive.css?v=3">
+    <link rel="stylesheet" href="css/animations.css?v=3">
+</head>
+<body>
+    <header class="header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <h1>AXA <span>IMÓVEIS FLORIPA</span></h1>
+            </a>
+            
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#catalogo">Empreendimentos</a></li>
+                    <li><a href="#regioes">Regiões</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-whatsapp nav-whatsapp-cta" id="nav-whatsapp-btn">
+                    <span class="nav-btn-label">Entre em contato</span>
+                    <span class="nav-btn-icon" aria-hidden="true"></span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-text reveal">
+                    <span class="eyebrow">IMÓVEIS SELECIONADOS NA GRANDE FLORIANÓPOLIS</span>
+                    <h2>Encontre o imóvel que combina com o seu próximo passo.</h2>
+                    <p>Explore apartamentos, lançamentos e terrenos selecionados pela AXA Imóveis Floripa.</p>
+                    <div class="hero-actions">
+                        <a href="#catalogo" class="btn btn-primary">Explorar imóveis</a>
+                        <a href="#" class="btn btn-secondary btn-whatsapp" id="hero-whatsapp-btn">Falar com Alexsandro</a>
+                    </div>
+                    <div class="hero-stats" id="hero-stats">
+                        <!-- Gerado via JS: 10 empreendimentos • 4 cidades • Apartamentos, Studios, Terrenos -->
+                    </div>
+                </div>
+                <div class="hero-image reveal">
+                    <img src="assets/images/properties/scire-view/image_2.webp" alt="Piscina e área de lazer Scire View — São José/SC" fetchpriority="high" width="800" height="900" id="hero-main-image" style="object-position: left center;">
+                </div>
+            </div>
+        </section>
+
+        <section class="search-floating">
+            <div class="container">
+                <div class="search-box reveal">
+                    <h3>Encontre o imóvel ideal</h3>
+                    <form class="search-form" id="search-form">
+                        <div class="input-group">
+                            <label for="search-location">Localização</label>
+                            <select id="search-location">
+                                <option value="all">Todas</option>
+                                <!-- JS fill -->
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="search-type">Tipo de imóvel</label>
+                            <select id="search-type">
+                                <option value="all">Todos</option>
+                                <!-- JS fill -->
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="search-bedrooms">Dormitórios</label>
+                            <select id="search-bedrooms">
+                                <option value="all">Todos</option>
+                                <!-- JS fill -->
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="search-text">Empreendimento</label>
+                            <input type="text" id="search-text" placeholder="Nome ou palavra-chave">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-search">Buscar imóveis</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalogo" id="catalogo">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">EMPREENDIMENTOS</span>
+                    <h2>Conheça os imóveis selecionados pela AXA</h2>
+                    <p>Explore diferentes propostas, localizações e estilos para encontrar a opção que faz mais sentido para você.</p>
+                </div>
+                
+                <div class="filters reveal" id="filters-container">
+                    <div class="filter-chips" id="filter-chips">
+                        <button class="chip active" data-filter="all">Todos</button>
+                        <!-- Gerado via JS: Apartamentos, Studios, Terrenos, São José, etc -->
+                    </div>
+                    <div class="results-count" id="results-count">
+                        Carregando imóveis...
+                    </div>
+                </div>
+
+                <div class="properties-grid" id="properties-grid">
+                    <!-- Gerado via JS -->
+                </div>
+                
+                <div class="empty-state" id="empty-state" style="display: none;">
+                    <h3>Nenhum empreendimento encontrado com esses filtros.</h3>
+                    <p>Tente ajustar sua busca ou remover alguns filtros.</p>
+                    <button class="btn btn-secondary" id="clear-filters-btn">Limpar filtros</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="regioes" id="regioes">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Explore por localização</h2>
+                </div>
+                <div class="regions-grid reveal" id="regions-grid">
+                    <!-- Gerado via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section class="editorial" id="sobre">
+            <div class="container editorial-container">
+                <div class="editorial-content reveal">
+                    <h2>Mais do que imóveis.<br>Escolhas para diferentes momentos da vida.</h2>
+                    <p>A AXA Imóveis Floripa reúne empreendimentos com diferentes propostas, localizações e estilos para facilitar sua busca pelo imóvel ideal. Atuamos na apresentação e intermediação de imóveis na Grande Florianópolis, conectando clientes a diferentes opções de apartamentos, lançamentos e terrenos.</p>
+                    <div class="editorial-info">
+                        <strong>Alexsandro Quadros</strong>
+                        <span>CRECI/SC 8664-J</span>
+                    </div>
+                </div>
+                <div class="editorial-images reveal">
+                    <div class="ed-img ed-img-1"><img src="assets/images/properties/scire-botanic/cover.webp" alt="Arquitetura Scire Botanic" loading="lazy"></div>
+                    <div class="ed-img ed-img-2"><img src="assets/images/properties/scire-connect/cover.webp" alt="Área de lazer Scire Connect" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-comercial" id="contato">
+            <div class="container">
+                <div class="cta-content reveal">
+                    <h2>Ainda não encontrou o imóvel ideal?</h2>
+                    <p>Conte ao Alexsandro o que você procura e conheça as opções disponíveis.</p>
+                    <a href="#" class="btn btn-primary btn-whatsapp" id="footer-whatsapp-btn">Conversar pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>AXA <span>IMÓVEIS FLORIPA</span></h2>
+                    <p class="creci">Alexsandro Quadros <br> CRECI/SC 8664-J</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>WhatsApp: <span id="footer-phone">(51) 99309-9334</span></p>
+                    <p>E-mail: <span id="footer-email">axaimoveisfloripa@gmail.com</span></p>
+                    <p class="cnpj">Quadros Serviços Ltda <br> CNPJ: 52.280.826/0001-55</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#catalogo">Empreendimentos</a></li>
+                        <li><a href="#regioes">Regiões</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>As informações e disponibilidades podem sofrer alterações sem aviso prévio. Consulte condições comerciais atualizadas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="fab-whatsapp btn-whatsapp" aria-label="Falar pelo WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/config.js?v=3"></script>
+    <script src="js/properties.js?v=3"></script>
+    <script src="js/utils.js?v=3"></script>
+    <script src="js/filters.js?v=3"></script>
+    <script src="js/app.js?v=3"></script>
+</body>
+</html>
