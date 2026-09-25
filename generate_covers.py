@@ -12,21 +12,69 @@ dest_base = Path(r"c:\REP-ANTIGRAVITY\assets\images\properties")
 src_images = Path(r"c:\REP-ANTIGRAVITY\temp_extract")
 
 # Mapeamento: slug -> (arquivo de fundo, nome exibido, subtítulo)
+# Para empreendimentos cujas imagens já foram extraídas para assets/,
+# apontamos diretamente para a imagem desejada como capa.
 covers = {
-    "residencial-becker": {
-        "bg": src_images / "BECKER/BECKER/PH_RESIDENCIAL BECKER_00_IMPLANTACAO_2026.08.24.jpg",
-        "name": "Residencial Becker",
-        "sub": "Blumenau • SC"
+
+    "scire-connect": {
+        "bg": dest_base / "scire-connect/cover.webp",
+        "name": "Scire Connect",
+        "sub": "Barreiros • São José / SC"
+    },
+    "scire-view": {
+        "bg": dest_base / "scire-view/image_1.webp",
+        "name": "Scire View",
+        "sub": "Centro Histórico • São José / SC"
+    },
+    "scire-botanic": {
+        "bg": dest_base / "scire-botanic/image_1.webp",
+        "name": "Scire Botanic",
+        "sub": "Areias • São José / SC"
+    },
+    "terra-golden-resort": {
+        "bg": dest_base / "terra-golden-resort/image_104_right.webp",
+        "name": "Terrá Golden Resort",
+        "sub": "Terrá • São José / SC"
+    },
+    "terra-wave-resort": {
+        "bg": dest_base / "terra-wave-resort/cover.webp",
+        "name": "Terrá Wave Resort",
+        "sub": "Terrá • São José / SC"
     },
     "san-george": {
-        "bg": src_images / "SAN_GEORGE/Imagens/PH_SAN GEORGE_00_IMPLANTACAO_2026.01.23.jpg",
+        "bg": dest_base / "san-george/image_12.webp",
         "name": "San George",
-        "sub": "São José • SC"
+        "sub": "Velha • Blumenau / SC"
     },
     "the-line": {
-        "bg": src_images / "the_line/IMAGENS/BOULEVARD.jpg",
+        "bg": dest_base / "the-line/image_0.webp",
         "name": "The Line",
-        "sub": "São José • SC"
+        "sub": "Londrina / PR"
+    },
+    "viva-serenita": {
+        "bg": dest_base / "viva-serenita/image_102.webp",
+        "name": "Viva Serenità",
+        "sub": "Fundos • Biguaçu / SC"
+    },
+    "bamburgo": {
+        "bg": dest_base / "bamburgo/image_100.webp",
+        "name": "Bamburgo",
+        "sub": "Blumenau / SC"
+    },
+    "gran-malltech": {
+        "bg": dest_base / "gran-malltech/image_100.webp",
+        "name": "Gran Malltech",
+        "sub": ""
+    },
+    "vivanti": {
+        "bg": dest_base / "vivanti/image_100.webp",
+        "name": "Palhoça Vivanti",
+        "sub": "Pedra Branca • Palhoça / SC"
+    },
+    "aura": {
+        "bg": dest_base / "aura/image_100.webp",
+        "name": "Aurora (Aura)",
+        "sub": ""
     },
 }
 

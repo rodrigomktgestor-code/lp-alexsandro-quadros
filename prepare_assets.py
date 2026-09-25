@@ -20,13 +20,12 @@ src_base = Path(r"c:\REP-ANTIGRAVITY\temp_extract")
 dest_base = Path(r"c:\REP-ANTIGRAVITY\assets\images\properties")
 
 property_mappings = {
-    "residencial-becker": src_base / "BECKER/BECKER",
     "san-george": src_base / "SAN_GEORGE/Imagens",
     "the-line": src_base / "the_line/IMAGENS",
     "viva-serenita": src_base / "viva_serenita"
 }
 
-# Since we don't have ZIPs for Scire Connect, Scire View, Botanic, Boulevard, Golden Resort, Wave Resort
+# Since we don't have ZIPs for Scire Connect, Scire View, Botanic, Golden Resort, Wave Resort
 # I will need to extract images from their PDFs!
 # Let me write a function to extract images from PDFs.
 import fitz
@@ -72,7 +71,6 @@ pdf_mappings = {
     "scire-connect": src_base / "Book Scire Connect - Barreiros (3).pdf",
     "scire-view": src_base / "BOOK VIEW 23.10.pdf",
     "scire-botanic": src_base / "BOOKING Botanic Digital - CV (1).pdf",
-    "scire-boulevard": src_base / "BOOKING Boulevardpdf.pdf",
     "terra-golden-resort": src_base / "Golden_Folder Digital.pdf",
     "terra-wave-resort": src_base / "Wave_ebook.pdf"
 }

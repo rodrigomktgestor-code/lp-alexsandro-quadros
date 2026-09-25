@@ -20,10 +20,10 @@ pdf_covers = {
         "sub": "Barreiros • São José / SC"
     },
     "scire-view": {
-        "pdf": original_pdf_dir / "BOOK VIEW 23.10.pdf",
+        "pdf": original_pdf_dir / "VIEW/BOOK VIEW 23.10.pdf",
         "page": 0,
         "name": "Scire View",
-        "sub": "São José / SC"
+        "sub": "Centro Histórico • São José / SC"
     },
     "scire-botanic": {
         "pdf": original_pdf_dir / "BOOKING Botanic Digital - CV (1).pdf",
@@ -31,23 +31,53 @@ pdf_covers = {
         "name": "Scire Botanic",
         "sub": "Areias • São José / SC"
     },
-    "scire-boulevard": {
-        "pdf": original_pdf_dir / "BOOKING Boulevardpdf.pdf",
-        "page": 0,
-        "name": "Scire Boulevard",
-        "sub": "Passa Vinte • Palhoça / SC"
-    },
     "terra-golden-resort": {
-        "pdf": original_pdf_dir / "Golden_Folder Digital.pdf",
+        "pdf": original_pdf_dir / "GOLDEN/Golden_Folder Digital.pdf",
         "page": 0,
         "name": "Terrá Golden Resort",
         "sub": "Bairro Terrá • São José / SC"
     },
     "terra-wave-resort": {
         "pdf": original_pdf_dir / "Wave_ebook.pdf",
-        "page": 0,
+        "page": 7,
         "name": "Terrá Wave Resort",
         "sub": "Bairro Terrá • São José / SC"
+    },
+    "san-george": {
+        "pdf": original_pdf_dir / "SAN GEORGE/BOOK CLIENTE- SAN GEORGE.pdf",
+        "page": 0,
+        "name": "San George",
+        "sub": "Velha • Blumenau / SC"
+    },
+    "viva-serenita": {
+        "pdf": original_pdf_dir / "Viva Serenità/Book_Viva Serenita.pdf",
+        "page": 0,
+        "name": "Viva Serenità",
+        "sub": "Fundos • Biguaçu / SC"
+    },
+    "bamburgo": {
+        "pdf": original_pdf_dir / "BAMBURGO/BOOK CLIENTE - BAMBURGO.pdf",
+        "page": 0,
+        "name": "Bamburgo",
+        "sub": "Blumenau / SC"
+    },
+    "gran-malltech": {
+        "pdf": original_pdf_dir / "GRAN MALLTECH/01257 1 - GRAN MALLTECH - APRESENTAÇÃO DIGITA0_V05 (1).pdf",
+        "page": 0,
+        "name": "Gran Malltech",
+        "sub": ""
+    },
+    "vivanti": {
+        "pdf": original_pdf_dir / "VIVANTI/treinamento técnico.pdf",
+        "page": 0,
+        "name": "Palhoça Vivanti",
+        "sub": "Pedra Branca • Palhoça / SC"
+    },
+    "aura": {
+        "pdf": original_pdf_dir / "AURA/AURA-MAIO26-MATERIALDEVENDAS.pdf",
+        "page": 0,
+        "name": "Aurora (Aura)",
+        "sub": ""
     },
 }
 

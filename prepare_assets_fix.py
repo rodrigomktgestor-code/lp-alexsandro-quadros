@@ -23,7 +23,7 @@ pdf_mappings = {
     "scire-connect": original_pdf_dir / "Book Scire Connect - Barreiros (3).pdf",
     "scire-view": original_pdf_dir / "BOOK VIEW 23.10.pdf",
     "scire-botanic": original_pdf_dir / "BOOKING Botanic Digital - CV (1).pdf",
-    "scire-boulevard": original_pdf_dir / "BOOKING Boulevardpdf.pdf",
+
     "terra-golden-resort": original_pdf_dir / "Golden_Folder Digital.pdf",
     "terra-wave-resort": original_pdf_dir / "Wave_ebook.pdf"
 }

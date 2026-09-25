@@ -6,7 +6,7 @@ O desenvolvimento do catálogo imobiliário da **AXA Imóveis Floripa** foi conc
 
 ### 1. Extração e Organização de Dados (Data Layer)
 - Todos os PDFs e materiais fornecidos na pasta original foram escaneados e processados.
-- Criamos o `js/properties.js`, um dataset estruturado em JavaScript contendo 10 empreendimentos identificados (Scire Connect, View, Botanic, Boulevard, Terrá Golden Resort, Terrá Wave Resort, Residencial Becker, San George, The Line, Viva Serenità).
+- Criamos o `js/properties.js`, um dataset estruturado em JavaScript contendo 8 empreendimentos identificados (Scire Connect, View, Botanic, Terrá Golden Resort, Terrá Wave Resort, San George, The Line, Viva Serenità).
 - Todas as informações como cidade, bairro, dormitórios, características, lazer e infraestrutura foram extraídas meticulosamente e estruturadas em um modelo robusto.
 - As imagens extraídas dos PDFs e arquivos ZIP foram redimensionadas e otimizadas para `WebP` usando um script automatizado, garantindo carregamento rápido.
 
