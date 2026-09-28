@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="css/responsive.css?v=3">
     <link rel="stylesheet" href="css/animations.css?v=3">
     <link rel="stylesheet" href="css/property.css?v=3">
+    <style>
+        .axa-brand { color: #0B2D5C !important; }
+    </style>
 </head>
 <body>
     <header class="header" id="main-header">
         <div class="container header-container">
             <a href="index.html" class="logo">
-                <h1>AXA <span>IMÓVEIS FLORIPA</span></h1>
+                <h1><span class="axa-brand">AXA</span> <span>IMÓVEIS FLORIPA</span></h1>
             </a>
             
             <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
@@ -49,7 +52,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h2>AXA <span>IMÓVEIS FLORIPA</span></h2>
+                    <h2><span class="axa-brand">AXA</span> <span>IMÓVEIS FLORIPA</span></h2>
                     <p class="creci">Alexsandro Quadros <br> CRECI/SC 8664-J</p>
                 </div>
                 <div class="footer-contact">
@@ -100,6 +103,19 @@
     <!-- Scripts -->
     <script src="js/config.js?v=4"></script>
     <script src="js/properties.js?v=4"></script>
+    <script>
+        // Remove o empreendimento The Line antes da renderização do site.
+        if (typeof properties !== 'undefined' && Array.isArray(properties)) {
+            for (let i = properties.length - 1; i >= 0; i--) {
+                const item = properties[i] || {};
+                const slug = String(item.slug || '').toLowerCase();
+                const name = String(item.name || '').trim().toLowerCase();
+                if (slug === 'the-line' || name === 'the line') {
+                    properties.splice(i, 1);
+                }
+            }
+        }
+    </script>
     <script src="js/utils.js?v=4"></script>
     <script src="js/gallery.js?v=4"></script>
     <script src="js/property-page.js?v=4"></script>
