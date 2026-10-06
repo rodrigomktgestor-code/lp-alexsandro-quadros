@@ -13,7 +13,18 @@ pdf_covers = {
         "name": "Scire Connect",
         "sub": "Barreiros • São José / SC"
     },
-
+    "scire-boulevard": {
+        "pdf": original_pdf_dir / "BOOKING Boulevardpdf.pdf",
+        "page": 0,
+        "name": "Scire Boulevard",
+        "sub": "Palhoça / SC"
+    },
+    "scire-way": {
+        "pdf": original_pdf_dir / "Scire Way Book.pdf",
+        "page": 0,
+        "name": "Scire Way",
+        "sub": "Palhoça / SC"
+    }
 }
 
 SIZE = (1280, 860)
